@@ -1,0 +1,107 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #a1037a;
+    flex-direction: column;
+    gap: 44px;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5em;
+    color: #a1037a;
+    background: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    letter-spacing: .1em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .4);
+    z-index: 1;
+    overflow: hidden;
+    transition: color 1s ease;
+    -webkit-transition: color 1s ease;
+    -moz-transition: color 1s ease;
+    -ms-transition: color 1s ease;
+    -o-transition: color 1s ease;
+}
+
+a:hover {
+    color: #fff;
+}
+
+a span {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: #ff00aa;
+    z-index: -1;
+    transition: width 1s ease;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -ms-transition: width 1s ease;
+    -o-transition: width 1s ease;
+}
+
+a span:nth-child(1) {
+    top: 0;
+    left: -50px;
+    transform: skewX(-60deg);
+    -webkit-transform: skewX(-60deg);
+    -moz-transform: skewX(-60deg);
+    -ms-transform: skewX(-60deg);
+    -o-transform: skewX(-60deg);
+}
+
+a:hover span:nth-child(1) {
+    width: 100%;
+}
+
+a span:nth-child(2) {
+    top: 0;
+    left: -50px;
+    transform: skewX(60deg);
+    -webkit-transform: skewX(60deg);
+    -moz-transform: skewX(60deg);
+    -ms-transform: skewX(60deg);
+    -o-transform: skewX(60deg);
+}
+
+a:hover span:nth-child(2) {
+    width: 100%;
+}
+
+a span:nth-child(3) {
+    top: 0;
+    right: -50px;
+    transform: skewX(-60deg);
+    -webkit-transform: skewX(-60deg);
+    -moz-transform: skewX(-60deg);
+    -ms-transform: skewX(-60deg);
+    -o-transform: skewX(-60deg);
+}
+
+a:hover span:nth-child(3) {
+    width: 100%;
+}
+
+a span:nth-child(4) {
+    top: 0;
+    right: -50px;
+    transform: skewX(60deg);
+}
+
+a:hover span:nth-child(4) {
+    width: 100%;
+}

@@ -1,0 +1,72 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    color: #0ef;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    transition: color 1s, box-shadow 0s;
+    -webkit-transition: color 1s, box-shadow 0s;
+    -moz-transition: color 1s, box-shadow 0s;
+    -ms-transition: color 1s, box-shadow 0s;
+    -o-transition: color 1s, box-shadow 0s;
+}
+
+a:hover {
+    color: #fff;
+    transition-delay: 0s, 1s;
+    box-shadow: 
+    0 0 10px #0ef,
+    0 0 20px #0ef,
+    0 0 40px #0ef,
+    0 0 80px #0ef;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    width: 50%;
+    height: 100%;
+    background: #0ef;
+    z-index: -1;
+    transition: 1s;
+    -webkit-transform: translateX(-50%) scale(0);
+    -moz-transform: translateX(-50%) scale(0);
+    -ms-transform: translateX(-50%) scale(0);
+    -o-transform: translateX(-50%) scale(0);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+a:hover::before {
+    width: 100%;
+    transform: translateX(-50%) scale(1);
+    -webkit-transform: translateX(-50%) scale(1);
+    -moz-transform: translateX(-50%) scale(1);
+    -ms-transform: translateX(-50%) scale(1);
+    -o-transform: translateX(-50%) scale(1);
+}
