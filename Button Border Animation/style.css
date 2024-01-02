@@ -1,0 +1,165 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif ;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1f242d;
+    flex-direction: column;
+    gap: 50px;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+    background: #262c37;
+    padding: 10px 30px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+a:hover {
+    color: var(--clr);
+    letter-spacing: 0.25em;
+} 
+
+a span {
+    position: absolute;
+    display: block;
+    background: var(--clr);
+}
+
+/* Top Line */
+a span:nth-child(1) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.2s;
+    transition-delay: 0.45s;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    -ms-transition: transform 0.2s;
+    -o-transition: transform 0.2s;
+}
+
+a:hover span:nth-child(1) {
+    transition: transform 0.2s;
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+
+/* Right Line */
+a span:nth-child(2) {
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform 0.2s;
+    transition-delay: 0.3s;
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    -ms-transition: transform 0.2s;
+    -o-transition: transform 0.2s;
+}
+
+a:hover span:nth-child(2) {
+    transition: transform 0.2s;
+    transform: scaleY(1);
+    transition-delay: 0.1s;
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+}
+
+/* Bottom Line */
+a span:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s;
+    transition-delay: 0.15s;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    -ms-transition: transform 0.2s;
+    -o-transition: transform 0.2s;
+}
+
+a:hover span:nth-child(3) {
+    transition: transform 0.2s;
+    transform: scaleX(1);
+    transition-delay: 0.2s;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+
+/* Left Line */
+a span:nth-child(4) {
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 0.2s;
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    -ms-transition: transform 0.2s;
+    -o-transition: transform 0.2s;
+}
+
+a:hover span:nth-child(4) {
+    transition: transform 0.2s;
+    transform: scaleY(1);
+    transition-delay: 0.3s;
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+}
