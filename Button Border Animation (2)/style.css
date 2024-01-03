@@ -1,0 +1,147 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    gap: 50px;
+    flex-direction: column;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    color: rgba(255, 255, 255, .4);
+    background: #111;
+    padding: 10px 30px;
+    font-size: 24px;
+    letter-spacing: 1.6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    transition-delay: .8s;
+}
+
+a:hover {
+    color: var(--clr);
+    text-shadow: 0 0 5px var(--clr);
+    letter-spacing: 4px;
+    transition-delay: 1ms;
+}
+
+a span {
+    position: absolute;
+    display: block;
+    background: var(--clr);
+    box-shadow: 0 0 5px var(--clr);
+}
+
+/* Left Top */
+a span:nth-child(1) {
+    left: 0;
+    top: 0;
+    width: 50.5%;
+    height: 2px;
+    transition: transform .5s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+a:hover span:nth-child(1) {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+/* Right Bottom */
+a span:nth-child(2) {
+    right: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 2px;
+    transition: transform .5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+a:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Right */
+a span:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transition: transform .5s;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition-delay: .4s;
+}
+
+a:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+}
+
+/* Left */
+a span:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    transition: transform .5s;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition-delay: .4s;
+}
+
+a:hover span:nth-child(4) {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+/* Left Bottom */
+a span:nth-child(5) {
+    left: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 2px;
+    transition: transform .5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition-delay: .8s;
+}
+
+a:hover span:nth-child(5) {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Right Top */
+a span:nth-child(6) {
+    right: 0;
+    top: 0;
+    width: 50.5%;
+    height: 2px;
+    transition: transform .5s;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition-delay: .8s;
+}
+
+a:hover span:nth-child(6) {
+    transform: scaleX(1);
+    transform-origin: right;
+}
